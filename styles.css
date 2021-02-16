@@ -1,0 +1,121 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: aquamarine;
+    background: url('https://cdn.pixabay.com/photo/2017/05/11/23/21/mount-fuji-2305606__340.jpg') top center no-repeat;
+    background-size: 100% 100%;
+}
+
+h1 {
+    color: black;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color: cadetblue;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: rgb(60, 65, 160);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.news {
+    background-color: white;
+    padding: 50px 0px 32px;
+}
+
+article {
+    width: 777px;
+    margin: 0px auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid black;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: rgb(24, 0, 130);
+}
+
+.article-meta {
+    color: rgb(83, 20, 146);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    object-fit: cover;
+}
+
+article:nth-of-type(2n) {
+    background-color: rgb(255, 192, 239);
+}
+
+article:nth-of-type(2n+1) {
+    background-color: rgb(192, 255, 197);
+}
+
+.real-new::after {
+    content: " NEW";
+    color: red;
+  }
+
+@font-face {
+    font-family: "Bonzai_Regular"; 
+    src: url("fonts/Bonzai_Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+.japan {
+    font-family: "Bonzai_Regular";
+    color: rgb(255, 0, 0);
+    font-size: 60px;
+    text-shadow: rgb(0, 0, 0) 2px 3px 0px;
+}
+
+@font-face {
+    font-family: "Prounbc"; 
+    src: url("fonts/Prounbc.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+h2 {
+    font-family: "Prounbc";
+}
+
+/*
+.real-new::after {
+    content: url("images/new for japan.svg") center no-repeat; 
+    background-size: contain;
+  }
+*/
